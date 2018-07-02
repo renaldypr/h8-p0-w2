@@ -1,0 +1,94 @@
+By: Renaldy Pratama
+
+I. Newton Second Law
+
+  a. Algoritma
+    1. SIMPAN 'm' dengan nilai 600
+    2. SIMPAN 'a' dengan nilai 2
+    3. SIMPAN 'F' tanpa diberi nilai
+    4. HITUNG hasil perkalian 'm' dengan 'a'
+    5. SET nilai 'F' dengan hasil perhitungan di step 4
+    6. TAMPILKAN nilai 'F'
+    7. SELESAI
+
+  b. Pseudocode
+    STORE 'm' with 600
+    STORE 'a' with 2
+    STORE 'F' without any value
+
+    CALCULATE 'm' * 'a'
+    SET 'F' value with calculation result
+
+    DISPLAY 'F'
+
+
+II. Tahun Kabisat
+
+  a. Algoritma
+    1. SIMPAN 'tahun' dengan nilai berapapun
+    2. JIKA 'tahun' habis dibagi 4 DAN 'tahun' tidak habis dibagi 100, maka lanjut ke step 2a;
+       JIKA 'tahun' habis dibagi 4 DAN 'tahun' habis dibagi 100 DAN 'tahun' habis dibagi 400, maka lanjut ke step 2a;
+       JIKA tidak keduanya, masuk step 2b
+       2a. TAMPILKAN 'Tahun Kabisat'
+       2b. TAMPILKAN 'Bukan Tahun Kabisat'
+    3. SELESAI
+
+  b. Pseudocode
+    STORE 'tahun' with any value
+
+    IF 'tahun' mod 4 = 0 AND 'tahun' mod 100 != 0 THEN
+      DISPLAY 'Tahun Kabisat'
+    ELSE IF 'tahun' mod 4 = 0 AND 'tahun' mod 100 = 0 AND 'tahun' mod 400 = 0 THEN
+      DISPLAY 'Tahun Kabisat'
+    ELSE
+      DISPLAY 'Bukan Tahun Kabisat'
+    END IF
+
+
+III. Laundry Day
+
+  a. Algoritma
+    1. SIMPAN 'pakaian' dengan nilai 0
+    2. SELAMA nilai 'pakaian' KURANG DARI 20, lanjut ke step 2a. Jika nilai 'pakaian' sudah 20, lanjut ke step 3
+       2a. Tambahkan nilai 'pakaian' dengan 1, TAMPILKAN nilai 'pakaian', lalu kembali ke step 2
+    3. TAMPILKAN 'Nyalakan Mesin Cuci!'
+    4. SELESAI
+
+  b. Pseudocode
+    STORE 'pakaian' with 0
+
+    WHILE 'pakaian' < 20 DO
+      SET 'pakaian' = 'pakaian' + 1
+      DISPLAY 'pakaian' //untuk menginfokan Foxie jumlah pakaian yang sudah dimasukkan
+    END WHILE
+
+    DISPLAY 'Nyalakan mesin cuci!'
+
+
+IV. Periksa Kuku
+
+  a. Algoritma
+    1. SIMPAN 'siswa' dengan nilai 0
+    2. SIMPAN 'batasSiswa' dengan nilai 40
+    3. SIMPAN 'statusKuku' yang nilainya adalah input dari kondisi kuku tiap siswa
+    4. SELAMA nilai 'siswa' KURANG DARI 'batasSiswa' lanjut ke step 5. Jika 'siswa' SAMA DENGAN 'batasSiswa' lanjut ke step 7
+    5. Mengecek 'statusKuku'. Jika 'statusKuku' adalah 'PANJANG' MAKA lanjut ke step 5a. Jika tidak, lanjut ke step 5b
+       5a. TAMPILKAN 'Beri Hukuman', lanjut ke step 6
+       5b. TAMPILKAN 'Beri Pujian', lanjut ke step 6
+    6. Tambahkan nilai 'siswa' dengan 1 (merepresentasikan guru berpindah mengecek siswa berikutnya). Kembali ke step 4
+    7. SELESAI
+
+  b. Pseudocode
+    STORE 'siswa' with 0
+    STORE 'batasSiswa' with 40
+    STORE 'statusKuku' with input of each student's nail condition
+
+    WHILE 'siswa' < 'batasSiswa' DO
+      CHECK 'statusKuku'
+      IF 'statusKuku' = 'PANJANG' THEN
+        DISPLAY 'Beri Hukuman'
+      ELSE
+        DISPLAY 'Beri Pujian'
+      END IF
+      SET 'siswa' = 'siswa' + 1
+    END WHILE
