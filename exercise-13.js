@@ -2,7 +2,6 @@
 
 function xo(str) {
   var i = 0;
-  var j = 0;
   var jumlahChar = str.length;
   var checkChar;
   var jumlahX = 0;
@@ -10,15 +9,13 @@ function xo(str) {
   var output;
 
   while (i < jumlahChar) {
-    checkChar = str[j];
+    checkChar = str[i];
     if (checkChar === 'x') {
       jumlahX++;
     } else {
       jumlahO++;
     }
-    checkChar = '';
     i++;
-    j++;
   }
 
   if (jumlahX === jumlahO) {
